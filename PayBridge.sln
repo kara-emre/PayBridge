@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPridge.Domain", "PayPridge.Domain\PayPridge.Domain.csproj", "{46638C4E-F5F0-4A28-93BC-730736A852DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPridge.Application", "PayPridge.Application\PayPridge.Application.csproj", "{E139E551-BDC8-4D64-B182-65F51733B8B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPridge.Infrastructure", "PayPridge.Infrastructure\PayPridge.Infrastructure.csproj", "{C6F5B958-FDC0-449B-95EC-D517885DB053}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9364D6D0-6867-4A0C-9C0E-16B805C2105D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayBridge.API", "PayBridge.API\PayBridge.API.csproj", "{F72985A7-22A8-4AE4-838B-A7932C937846}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46638C4E-F5F0-4A28-93BC-730736A852DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46638C4E-F5F0-4A28-93BC-730736A852DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46638C4E-F5F0-4A28-93BC-730736A852DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46638C4E-F5F0-4A28-93BC-730736A852DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E139E551-BDC8-4D64-B182-65F51733B8B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E139E551-BDC8-4D64-B182-65F51733B8B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E139E551-BDC8-4D64-B182-65F51733B8B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E139E551-BDC8-4D64-B182-65F51733B8B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F5B958-FDC0-449B-95EC-D517885DB053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F5B958-FDC0-449B-95EC-D517885DB053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F5B958-FDC0-449B-95EC-D517885DB053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F5B958-FDC0-449B-95EC-D517885DB053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9364D6D0-6867-4A0C-9C0E-16B805C2105D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9364D6D0-6867-4A0C-9C0E-16B805C2105D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9364D6D0-6867-4A0C-9C0E-16B805C2105D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9364D6D0-6867-4A0C-9C0E-16B805C2105D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F72985A7-22A8-4AE4-838B-A7932C937846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72985A7-22A8-4AE4-838B-A7932C937846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72985A7-22A8-4AE4-838B-A7932C937846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72985A7-22A8-4AE4-838B-A7932C937846}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		        SolutionGuid = {01B1FE90-4B30-4B97-B8BD-1ECFA2E3C50A}
+		SolutionGuid = {E22DFAF8-3E09-4800-B079-299E9C49A0F0}
+	EndGlobalSection
+EndGlobal

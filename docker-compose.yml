@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  paypridge-api:
+    build:
+      context: .
+      dockerfile: PayBridge.API/Dockerfile
+    container_name: paypridge-api
+    depends_on:
+      - rabbitmq
+      - sqlserver
+    environment:
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      RABBITMQ_USER: guest
+      RABBITMQ_PASS: guest
+      SQLSERVER_HOST: sqlserver
+      SQLSERVER_PORT: 1433
+      SQLSERVER_USER: sa
+      SQLSERVER_PASS: ZorunluSifre123+!
+    ports:
+      - "8080:8080"
+    restart: always
+    command: /bin/sh -c "until nc -z -v -w30 rabbitmq 5672; do echo 'Waiting for RabbitMQ...'; sleep 5; done; until nc -z -v -w30 sqlserver 1433; do echo 'Waiting for SQL Server...'; sleep 5; done; dotnet PayPridge.API.dll"
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    restart: always
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: ZorunluSifre123+!
+    ports:
+      - "1433:1433" 
+
+ 
