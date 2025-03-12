@@ -25,7 +25,7 @@ PayBridge is a comprehensive payment system integration solution designed to str
 
 ### Prerequisites
 
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Docker](https://www.docker.com/get-started)
 - [RabbitMQ](https://www.rabbitmq.com/download.html)
 
